@@ -5,12 +5,14 @@ import {Link} from 'react-router-dom'
 
 export default function Header() {
   return (
-    <nav className="fixed w-screen bg-slate-50 px-20 py-5  justify-between flex-row  inline-flex items-center ">
+    <nav className="z-20 fixed w-screen bg-slate-50 px-20 py-5  justify-between flex-row  inline-flex items-center ">
       <div className="h-full">
-        <h1>LOGO</h1>
+        <Link to="/">
+          <h1 className='text-2xl'>SNKRS</h1>
+        </Link>
       </div>
       <div className="w-1/2 ">
-        <ul className="flex flex-row justify-between items-stretch">
+        <ul className="flex flex-row justify-around items-stretch">
           <li>
             <p>Home</p>
           </li>
@@ -18,10 +20,10 @@ export default function Header() {
             <p>Sneakers</p>
           </li>
           <li>
-            <p>Home</p>
+            <p>Sale</p>
           </li>
           <li>
-            <p>Home</p>
+            <p>New Launches</p>
           </li>
         </ul>
       </div>

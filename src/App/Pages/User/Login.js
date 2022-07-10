@@ -9,6 +9,7 @@ export default function Login() {
       <Header />
       <div className="flex flex-col justify-center min-h-screen items-center">
         <div className="w-1/2">
+          <h1 className="text-4xl font-medium mb-2">LOGIN</h1>
           <input
             name="email"
             className="mb-5 block w-full text-gray-700 bg-gray-100 border-0  rounded py-4 px-4  my-3 leading-tight focus:outline-none focus:bg-gray-200"
@@ -36,6 +37,12 @@ export default function Login() {
           <button className="bg-black w-full text-xl text-white border-2 border-black  font-bold py-4 px-4 rounded ">
             Login
           </button>
+          <div className='mt-4 text-center'>
+            <p>
+              New Here?{"  "}
+              <Link to="/user/signup" className='text-sky-400'>Signup here</Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>

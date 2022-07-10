@@ -7,7 +7,7 @@ export default function Item() {
   return (
     <div>
       <Header />
-      <div className="px-20 flex flex-row  pt-20">
+      <div className="px-20 flex flex-row pt-32">
         <div className="w-1/2 flex flex-row">
           <div className="w-1/5 p-1 flex flex-col justify-between">
             <img src="https://superkicks.in/wp-content/uploads/2022/06/1-32-850x850.jpg" />

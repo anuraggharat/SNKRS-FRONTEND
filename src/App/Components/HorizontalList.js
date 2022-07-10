@@ -8,17 +8,20 @@ import Shoe6 from "../Assets/Images/shoe6.jpg";
 
 import CardItem from "./CardItem";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
-var container = document.getElementById("container");
-function scrollright() {
-  container.scrollBy(300, 0);
-}
-function scrollleft() {
-  container.scrollBy(-300, 0);
-}
+
 
 export default function HorizontalList({text="Latest Release"}) {
+  
+  var container = document.getElementById("container");
+  function scrollright() {
+    container.scrollBy(300, 0);
+  }
+  function scrollleft() {
+    container.scrollBy(-300, 0);
+  }
+  
   return (
-    <div className="w-100 py-20">
+  <div className="w-100 py-20">
       <div className="px-20">
         <div className="mb-10 flex flex-row justify-between">
           <h2 className="text-3xl font-bold">{text}</h2>
