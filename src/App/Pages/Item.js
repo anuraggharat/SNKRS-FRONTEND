@@ -1,22 +1,51 @@
-import React from 'react'
+import React,{useState} from 'react'
+import BagSidebar from '../Components/BagSidebar';
 import Footer from '../Components/Footer';
 import Header from '../Components/Header'
 import HorizontalList from '../Components/HorizontalList';
 
+const data = [
+  "https://superkicks.in/wp-content/uploads/2022/06/1-32-850x850.jpg",
+  "https://superkicks.in/wp-content/uploads/2022/06/1-32-850x850.jpg",
+  "https://superkicks.in/wp-content/uploads/2022/06/2-25-850x850.jpg",
+  "https://superkicks.in/wp-content/uploads/2022/06/3-25-850x850.jpg",
+  "https://superkicks.in/wp-content/uploads/2022/06/1-31-850x850.jpg",
+];
+
 export default function Item() {
+
+
+  const [selected, setSelected] = useState(data[0]);
+
   return (
-    <div>
+    <div className="max-w-screen-2xl	mx-auto">
       <Header />
       <div className="px-20 flex flex-row pt-32">
         <div className="w-1/2 flex flex-row">
           <div className="w-1/5 p-1 flex flex-col justify-between">
-            <img src="https://superkicks.in/wp-content/uploads/2022/06/1-32-850x850.jpg" />
-            <img src="https://superkicks.in/wp-content/uploads/2022/06/2-25-850x850.jpg" />
-            <img src="https://superkicks.in/wp-content/uploads/2022/06/3-25-850x850.jpg" />
-            <img src="https://superkicks.in/wp-content/uploads/2022/06/1-31-850x850.jpg" />
+            <img
+              src={data[1]}
+              onClick={() => setSelected(data[1])}
+              className="cursor-pointer"
+            />
+            <img
+              src={data[2]}
+              onClick={() => setSelected(data[2])}
+              className="cursor-pointer"
+            />
+            <img
+              src={data[3]}
+              onClick={() => setSelected(data[3])}
+              className="cursor-pointer"
+            />
+            <img
+              src={data[4]}
+              onClick={() => setSelected(data[4])}
+              className="cursor-pointer"
+            />
           </div>
           <div className="w-4/5 p-1">
-            <img src="https://superkicks.in/wp-content/uploads/2022/06/1-32-850x850.jpg" />
+            <img src={selected} />
           </div>
         </div>
         <div className="w-1/2 pt-5 px-10">
@@ -62,7 +91,7 @@ export default function Item() {
       <div>
         <img src="https://media.gq.com/photos/60da019bab6b8cc6e9d2c96c/64:25/w_4224,h_1650,c_limit/GettyImages-1325229940.jpg" />
       </div>
-    
+      <BagSidebar />
       <Footer />
     </div>
   );

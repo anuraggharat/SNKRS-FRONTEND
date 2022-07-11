@@ -5,10 +5,10 @@ import {Link} from 'react-router-dom'
 
 export default function Header() {
   return (
-    <nav className="z-20 fixed w-screen bg-slate-50 px-20 py-5  justify-between flex-row  inline-flex items-center ">
+    <nav className="max-w-screen-2xl z-20 fixed w-screen bg-white px-20 py-5  justify-between flex-row  inline-flex items-center ">
       <div className="h-full">
         <Link to="/">
-          <h1 className='text-2xl'>SNKRS</h1>
+          <h1 className="text-2xl">SNKRS</h1>
         </Link>
       </div>
       <div className="w-1/2 ">
