@@ -14,8 +14,10 @@ const data = [
 
 export default function Item() {
 
-
+  const [cartShown,setCartShown] = useState(false)
   const [selected, setSelected] = useState(data[0]);
+
+   console.log(cartShown) 
 
   return (
     <div className="max-w-screen-2xl	mx-auto">
@@ -76,7 +78,7 @@ export default function Item() {
             </button>
           </div>
           <div className="mt-4 flex flex-col">
-            <button className="hover:bg-black  hover:text-white border-2 border-black text-black font-bold py-2 px-4 rounded ">
+            <button className="hover:bg-black  hover:text-white border-2 border-black text-black font-bold py-2 px-4 rounded " onClick={()=>setCartShown(!cartShown)}>
               Add to Bag
             </button>
             <button className="hover:bg-black border-2 border-black bg-black text-white font-bold py-2 px-4 rounded mt-2">
@@ -91,7 +93,7 @@ export default function Item() {
       <div>
         <img src="https://media.gq.com/photos/60da019bab6b8cc6e9d2c96c/64:25/w_4224,h_1650,c_limit/GettyImages-1325229940.jpg" />
       </div>
-      <BagSidebar />
+      <BagSidebar setCartShown={setCartShown} cartShown={cartShown} />
       <Footer />
     </div>
   );
