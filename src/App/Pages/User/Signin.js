@@ -44,7 +44,7 @@ export default function Signin() {
           <div className="mt-4 text-center">
             <p>
               Already a member?{"  "}
-              <Link to="/user/signin" className="text-sky-400">
+              <Link to="/user/login" className="text-sky-400">
                 Login here
               </Link>
             </p>
