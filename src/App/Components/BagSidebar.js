@@ -8,8 +8,9 @@ import CartListItem from './RegularComponents/CartListItem'
 export default function BagSidebar({ setCartShown, cartShown }) {
   return (
     <div
-      className={cartShown
-          ? "h-screen p-4 w-1/4 z-20 bg-slate-50 fixed top-0 right-0"
+      className={
+        cartShown
+          ? "h-screen p-4 w-1/4 z-20 ml-0 bg-white shadow-lg fixed top-0 right-0 transition-all duration-900	ease-in"
           : "hidden"
       }
     >
