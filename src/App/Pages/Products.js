@@ -65,14 +65,14 @@ export default function Products() {
 
     console.log(data)
   return (
-    <div className="w-100 bg-slate-50 min-h-screen relative">
+    <div className="w-100 bg-white min-h-screen relative">
       <Header />
-      <div className="py-40 px-20 ">
+      <div className="py-28 px-20 max-w-screen-xl mx-auto">
         <div className="">
           <p className="text-gray">Home / Shoes / Sneakers</p>
           <h1 className="text-4xl">Sneakers</h1>
         </div>
-        <div className="flex flex-row flex-wrap mt-10">
+        <div className="flex flex-row flex-wrap mt-5">
           <div className="w-1/5 flex flex-col p-2">
             <div className="w-100 pr-3 border-b-[1px] py-4">
               <h2 className="text-xl font-medium mb-2">Sort</h2>
