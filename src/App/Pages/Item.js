@@ -55,7 +55,7 @@ export default function Item() {
           <h1 className="text-3xl font-bold">
             OZELIA ‘CRYSTAL WHITE / CLOUD WHITE’
           </h1>
-          <h4 className="my-2 text-xl font-medium">₹22,250/-</h4>
+          <h4 className="my-2 text-xl font-medium">₹2,250/-</h4>
           <p className="mt-2 text-gray-700">
             The radiance lives on in the Nike Air Force 1 '07, the b-ball OG
             that puts a fresh spin on what you know best: durably stitched

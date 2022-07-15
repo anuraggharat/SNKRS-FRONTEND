@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export default function CardItem({item}) {
+  console.log(item)
   return (
     <Link to={`/sneakers/${"shoe1"}`}>
       <div className="w-72 mr-10">
