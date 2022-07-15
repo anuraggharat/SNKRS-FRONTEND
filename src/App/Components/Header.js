@@ -4,6 +4,7 @@ import {BsFillHandbagFill} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 
 export default function Header() {
+  
   return (
     <nav className="fixed z-20 bg-white  w-screen  flex flex-row justify-center">
       <div className=" mx-auto max-w-screen-xl  w-full  px-20 py-5   justify-between inline-flex items-center ">
@@ -18,7 +19,9 @@ export default function Header() {
               <p>Home</p>
             </li>
             <li>
-              <p>Sneakers</p>
+              <Link to="/products">
+                <p >Sneakers</p>
+              </Link>
             </li>
             <li>
               <p>Sale</p>

@@ -1,9 +1,6 @@
 import React from "react";
-import HomeImage from "../Assets/Images/home-image.jpg";
-
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import HorizontalList from "../Components/HorizontalList";
 import ProductCard from "../Components/RegularComponents/ProductCard";
 
 const data = [
@@ -62,6 +59,20 @@ const gender = ["Male", "Female"];
 
 
 export default function Products() {
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
 
     console.log(data)
   return (
