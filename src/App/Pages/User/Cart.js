@@ -16,7 +16,6 @@ const data = [
 export default function Cart() {
  
 
-
   return (
     <div className="max-w-screen-2xl	mx-auto">
       <Header />
@@ -58,7 +57,7 @@ export default function Cart() {
               </div>
               <Link
                 to={"/user/checkout"}
-                className="hover:bg-white text-center hover:text-black bg-black hover:text-white border-2 w-full flex justify-center border-black text-white  font-bold py-2 px-4 rounded "
+                className="hover:bg-white text-center hover:text-black bg-black border-2 w-full flex justify-center border-black text-white  font-bold py-2 px-4 rounded "
               >
                 Checkout
               </Link>

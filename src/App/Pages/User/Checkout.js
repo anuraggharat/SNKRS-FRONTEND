@@ -13,6 +13,8 @@ const data = [
 ];
 
 export default function Checkout() {
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="max-w-screen-2xl	mx-auto relative">
       <Header />
@@ -135,7 +137,7 @@ export default function Checkout() {
                 <h2 className="font-medium">Total</h2>
                 <p>₹22,450/-</p>
               </div>
-              <button className="hover:bg-black border-2 border-black bg-black text-white font-bold py-2 px-4 rounded mt-2 w-full">
+              <button className="hover:bg-black border-2 border-black bg-black text-white font-bold py-2 px-4 rounded mt-2 w-full" onClick={()=>(setModal(!modal))}>
                 Place Order
               </button>
             </div>
@@ -155,7 +157,7 @@ export default function Checkout() {
                 <p>Internet Banking</p>
               </div>
               <div className="flex flex-row justify-start gap-2  mb-1">
-                <input type="radio" name="paymentmethod"  checked />{" "}
+                <input type="radio" name="paymentmethod" checked />{" "}
                 <p>Cash on Delivery</p>
               </div>
             </div>
@@ -163,7 +165,7 @@ export default function Checkout() {
         </div>
       </div>
       <Footer />
-      <Modal />
+      <Modal modal={modal} setModal={setModal} />
     </div>
   );
 }

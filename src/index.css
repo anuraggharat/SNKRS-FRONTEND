@@ -12,3 +12,6 @@
 .hide-scroll-bar::-webkit-scrollbar {
     display: none;
 }
+.mt-out{
+    margin-top: 200vh;
+}
