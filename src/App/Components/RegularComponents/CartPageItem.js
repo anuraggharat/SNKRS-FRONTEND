@@ -28,7 +28,7 @@ export default function CartPageItem({data}) {
           </button>
         </div>
         <div className="flex flex-col text-right">
-          <h1 className="font-normal text-lg">₹7,895/-</h1>
+          <h1 className="font-normal text-lg">₹22,250/-</h1>
         </div>
       </div>
       <hr className="my-5" />

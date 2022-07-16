@@ -24,9 +24,6 @@ export default function BagSidebar({ setCartShown, cartShown }) {
         </div>
         <div className="flex-1 mt-5 overflow-y-auto">
           <CartListItem img={Img} />
-          <CartListItem img={Img} />
-          <CartListItem img={Img} />
-          <CartListItem img={Img} />
         </div>
 
         <div className="flex flex-col mt-auto">
