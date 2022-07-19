@@ -1,0 +1,24 @@
+[33me278f87[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m HEAD@{0}: reset: moving to HEAD@{0}
+[33me278f87[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m HEAD@{1}: reset: moving to HEAD@{2}
+[33me278f87[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m HEAD@{2}: checkout: moving from dev to master
+[33me278f87[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m HEAD@{3}: checkout: moving from master to dev
+[33me278f87[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m HEAD@{4}: reset: moving to e278f87
+[33me278f87[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m HEAD@{5}: reset: moving to e278f87
+[33me278f87[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m HEAD@{6}: reset: moving to HEAD@{1}
+[33me278f87[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m HEAD@{7}: reset: moving to HEAD
+[33me278f87[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mdev[m[33m)[m HEAD@{8}: commit: modal setup
+[33m0f152a0[m HEAD@{9}: commit: checkout page done
+[33ma74c25b[m HEAD@{10}: commit: on hover events added
+[33m7510bb1[m HEAD@{11}: commit: navbar fixed
+[33me9315b7[m HEAD@{12}: commit: filter added to the left
+[33ma9e2452[m HEAD@{13}: commit: cart page done
+[33ma234b15[m HEAD@{14}: commit: sidebar done
+[33me8afa8b[m HEAD@{15}: commit: cart sidebar added
+[33m6582ea0[m HEAD@{16}: commit: added interactions
+[33mcaacbfc[m HEAD@{17}: commit: pages created
+[33m00997b6[m HEAD@{18}: commit: Login page done
+[33m474c568[m HEAD@{19}: commit: home page added and routes made
+[33m0b188c8[m HEAD@{20}: commit: basic front page done
+[33m79a47ce[m HEAD@{21}: commit: all necessary files created
+[33ma63ae21[m HEAD@{22}: commit: tailwind installed
+[33m0bca460[m HEAD@{23}: commit (initial): Initialize project using Create React App
