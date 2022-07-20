@@ -1,6 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import About from './App/Pages/About';
+import AddProducts from './App/Pages/Admin/AddProducts';
 import Dashboard from './App/Pages/Admin/Dashboard';
 import Home from './App/Pages/Home'
 import Item from './App/Pages/Item';
@@ -25,6 +26,7 @@ export default function ApplicationRouting() {
         <Route path="/user/checkout" element={<Checkout />} />
 
         <Route path="/admin/dashboard" element={<Dashboard />} />
+        <Route path="/admin/addproduct" element={<AddProducts />} />
       </Routes>
     </Router>
   );
