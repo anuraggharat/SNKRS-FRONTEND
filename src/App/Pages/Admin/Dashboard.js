@@ -7,37 +7,37 @@ export default function Dashboard() {
       <main className="flex flex-row min-h-screen flex-wrap text-gray-600 relative justify-end">
         <div className="w-1/5 bg-white flex flex-col pt-20 px-10 font-medium fixed top-0 left-0 h-screen ">
           <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-5 rounded-lg bg-green-400 text-white shadow">
+            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg bg-green-400 text-white shadow ">
               <i class="ri-dashboard-line mr-4"></i>
               <p>Dashboard</p>
             </div>
           </Link>
           <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-5 rounded-lg ">
+            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
               <i class="ri-line-chart-line  mr-4"></i>
               <p>Analytics</p>
             </div>
           </Link>
           <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-5 rounded-lg ">
+            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
               <i class="ri-shopping-bag-line mr-4"></i>
               <p>Shop</p>
             </div>
           </Link>
           <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-5 rounded-lg ">
+            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
               <i class="ri-user-line mr-4"></i>
               <p>User</p>
             </div>
           </Link>
           <Link to={"/admin/addproduct"}>
-            <div className="flex flex-row px-5 py-5 rounded-lg ">
+            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
               <i class="ri-menu-add-line mr-4"></i>
               <p>Add Products</p>
             </div>
           </Link>
           <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-5 rounded-lg ">
+            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
               <i class="ri-logout-box-line mr-4"></i>
               <p>Logout</p>
             </div>

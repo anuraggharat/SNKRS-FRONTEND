@@ -7,9 +7,13 @@ export default function SelectBox(props) {
         class="block appearance-none w-full bg-white border-[1px] shadow text-gray-700 py-4 px-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         id="grid-state"
       >
-        <option disabled>{props.name}</option>
+        <option value={props.name} disabled>
+          {props.name}
+        </option>
         {props.options.map((item) => (
-          <option key={item} value={item} >{item}</option>
+          <option key={item} value={item}>
+            {item}
+          </option>
         ))}
       </select>
       <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center text-gray-700">
