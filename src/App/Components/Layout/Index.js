@@ -6,9 +6,9 @@ import { Outlet } from 'react-router-dom';
 
 export default function Index({children}) {
   return (
-    <div>
+    <div className='bg-white '>
         <Header/>
-       <Outlet />
+        <Outlet />
         <Footer/>
     </div>
   )

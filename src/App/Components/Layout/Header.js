@@ -2,25 +2,26 @@ import React from 'react'
 import {FaRegUser} from 'react-icons/fa'
 import {BsFillHandbagFill} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
+import ButtonPrimary from '../Common/ButtonPrimary';
 
 export default function Header() {
   
   return (
     <nav className="fixed z-20 bg-white  w-screen  flex flex-row justify-center">
-      <div className=" mx-auto max-w-screen-xl  w-full  px-20 py-5   justify-between inline-flex items-center ">
-        <div className="h-full">
+      <div className="flex mx-auto max-w-screen-xl w-full  px-20 py-5  items-stretch">
+        <div className="h-full w-1/4">
           <Link to="/">
             <h1 className="text-2xl">SNKRS</h1>
           </Link>
         </div>
-        <div className="w-1/2 ">
-          <ul className="flex flex-row justify-around items-stretch">
+        <div className="w-1/2">
+          <ul className="flex flex-row justify-evenly items-center h-full">
             <li>
               <p>Home</p>
             </li>
             <li>
               <Link to="/products">
-                <p >Sneakers</p>
+                <p>Sneakers</p>
               </Link>
             </li>
             <li>
@@ -31,18 +32,17 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <div className="w-100  flex flex-row align-middle content-center">
+        <div className="w-1/4  gap-2 flex flex-row justify-end">
           <Link to={"/user/login"}>
-            <button class="bg-gray-300 mr-2 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-              <FaRegUser className="mr-1" />
+            <ButtonPrimary>
               <span>Login</span>
-            </button>
+            </ButtonPrimary>
           </Link>
           <Link to={"/user/cart"}>
-            <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <ButtonPrimary>
               <BsFillHandbagFill className="mr-1" />
-              <span>Bag</span>
-            </button>
+              <span>Login</span>
+            </ButtonPrimary>
           </Link>
         </div>
       </div>
