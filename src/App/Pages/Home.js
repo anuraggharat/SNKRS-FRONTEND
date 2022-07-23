@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full pt-20 md:pt-0">
         <img src={HomeImage} className="w-full" />
       </div>
       <HorizontalList />

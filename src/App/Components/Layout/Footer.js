@@ -25,13 +25,13 @@ export default function Footer() {
         <h2 className="text-xl mb-4">Follow us at:</h2>
         <ul className="flex flex-row text-xl gap-3">
           <li>
-            <i class="ri-facebook-line"></i>
+            <i className="ri-facebook-line"></i>
           </li>
           <li>
-            <i class="ri-instagram-line"></i>
+            <i className="ri-instagram-line"></i>
           </li>
           <li>
-            <i class="ri-twitter-line"></i>
+            <i className="ri-twitter-line"></i>
           </li>
         </ul>
       </div>
