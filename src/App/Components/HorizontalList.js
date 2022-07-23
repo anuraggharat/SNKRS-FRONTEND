@@ -21,8 +21,8 @@ export default function HorizontalList({text="Latest Release"}) {
   }
   
   return (
-    <div className="w-100 py-20">
-      <div className="px-20">
+    <div className="w-100 py-10 md:py-20">
+      <div className="px-5 md:px-20">
         <div className="mb-10 flex flex-row justify-between">
           <h2 className="text-3xl font-bold">{text}</h2>
           <div>

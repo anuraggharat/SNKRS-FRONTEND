@@ -8,13 +8,13 @@ export default function Header() {
   
   return (
     <nav className="fixed z-20 bg-slate-50 w-screen  flex flex-row justify-center">
-      <div className="flex mx-auto max-w-screen-xl w-full  px-20 py-5  items-stretch">
-        <div className="h-full w-1/4">
+      <div className="flex mx-auto max-w-screen-xl w-full px-5 md:px-20 py-5  items-stretch">
+        <div className="h-full w-1/2 md:w-1/4 flex flex-col justify-center">
           <Link to="/">
             <h1 className="text-2xl font-thin">SNKRS</h1>
           </Link>
         </div>
-        <div className="w-1/2">
+        <div className="w-0 hidden  md:block md:w-1/2">
           <ul className="flex flex-row justify-evenly items-center h-full">
             <li>
               <NavLink to="/">
@@ -38,13 +38,13 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <div className="w-1/4  gap-2 flex flex-row justify-end">
+        <div className="hidden md:w-1/4  gap-2 md:flex flex-row justify-end">
           <button className="inline-flex items-center px-2 h-full text-xl">
-            <i class="ri-search-line"></i>
+            <i className="ri-search-line"></i>
           </button>
           <Link to={"/user/cart"}>
             <button className="inline-flex items-center px-2 h-full text-xl">
-              <i class="ri-shopping-bag-line"></i>
+              <i className="ri-shopping-bag-line"></i>
             </button>
           </Link>
           <Link to={"/user/login"}>
@@ -52,6 +52,11 @@ export default function Header() {
               <span>Login</span>
             </ButtonPrimary>
           </Link>
+        </div>
+        <div className="flex flex-row justify-end text-xl  w-1/2 md:hidden">
+          <button className="px-4 py-2 bg-black text-white" >
+            <i class="ri-menu-3-fill"></i>
+          </button>
         </div>
       </div>
     </nav>
