@@ -10,23 +10,27 @@ import Cart from './App/Pages/User/Cart';
 import Checkout from './App/Pages/User/Checkout';
 import Login from './App/Pages/User/Login';
 import Signin from './App/Pages/User/Signin';
+import Layout from './App/Components/Layout/Index';
+
 
 export default function ApplicationRouting() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/sneakers/:slug" element={<Item />} />
-        <Route path="/products" element={<Products />} />
+        <Route element={<Layout/>}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/sneakers/:slug" element={<Item />} />
+          <Route path="/products" element={<Products />} />
 
-        <Route path="/user/login" element={<Login />} />
-        <Route path="/user/signup" element={<Signin />} />
-        <Route path="/user/cart" element={<Cart />} />
-        <Route path="/user/checkout" element={<Checkout />} />
+          <Route path="/user/login" element={<Login />} />
+          <Route path="/user/signup" element={<Signin />} />
+          <Route path="/user/cart" element={<Cart />} />
+          <Route path="/user/checkout" element={<Checkout />} />
 
-        <Route path="/admin/dashboard" element={<Dashboard />} />
-        <Route path="/admin/addproduct" element={<AddProducts />} />
+          <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route path="/admin/addproduct" element={<AddProducts />} />
+        </Route>
       </Routes>
     </Router>
   );
