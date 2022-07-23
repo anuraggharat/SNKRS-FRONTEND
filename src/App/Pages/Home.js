@@ -1,8 +1,8 @@
 import React from "react";
 import HomeImage from "../Assets/Images/home-image.jpg";
 
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
+import Header from "../Components/Layout/Header";
+import Footer from "../Components/Layout/Footer";
 import HorizontalList from "../Components/HorizontalList";
 
 

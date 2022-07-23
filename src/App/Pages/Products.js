@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
-import ProductCard from "../Components/RegularComponents/ProductCard";
+import Header from "../Components/Layout/Header";
+import Footer from "../Components/Layout/Footer";
+import ProductCard from "../Components/Common/ProductCard";
 
 const data = [
   {

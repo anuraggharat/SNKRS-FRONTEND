@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
-import BagSidebar from '../Components/BagSidebar';
-import Footer from '../Components/Footer';
-import Header from '../Components/Header'
+import BagSidebar from '../Components/Common/BagSidebar';
+import Footer from '../Components/Layout/Footer';
+import Header from '../Components/Layout/Header'
 import HorizontalList from '../Components/HorizontalList';
 
 const data = [

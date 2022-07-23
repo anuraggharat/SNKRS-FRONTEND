@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
-import CartPageItem from "../../Components/RegularComponents/CartPageItem";
+import Footer from "../../Components/Layout/Footer";
+import Header from "../../Components/Layout/Header";
+import CartPageItem from "../../Components/Common/CartPageItem";
 import { Link } from "react-router-dom";
 
 

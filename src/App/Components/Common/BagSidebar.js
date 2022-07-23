@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {IoMdClose} from 'react-icons/io'
 import {MdDelete} from 'react-icons/md'
-import Img from '../Assets/Images/shoe1.webp'
-import CartListItem from './RegularComponents/CartListItem'
+import Img from '../../Assets/Images/shoe1.webp'
+import CartListItem from './CartListItem'
 
 export default function BagSidebar({ setCartShown, cartShown }) {
   return (

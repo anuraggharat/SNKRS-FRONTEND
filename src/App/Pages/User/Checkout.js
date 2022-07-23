@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
-import CartPageItem from "../../Components/RegularComponents/CartPageItem";
-import Modal from "../../Components/RegularComponents/Modal";
+import Footer from "../../Components/Layout/Footer";
+import Header from "../../Components/Layout/Header";
+import CartPageItem from "../../Components/Common/CartPageItem";
+import Modal from "../../Components/Common/Modal";
 
 const data = [
   "https://superkicks.in/wp-content/uploads/2022/06/1-32-850x850.jpg",
