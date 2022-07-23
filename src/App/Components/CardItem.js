@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export default function CardItem({item}) {
+
+    if(!item.simage){
+      item.simage =
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/338fa63c-1898-4bce-beb9-4c80c92ea2cf/air-force-1-07-lx-shoes-xMp6zh.png";
+    } 
+
     const toggleImage = (e, type) => {
       type === "over"
         ? (e.target.src = item.simage)
