@@ -77,7 +77,6 @@ export default function Products() {
     console.log(data)
   return (
     <div className="w-100 bg-white min-h-screen relative">
-      <Header />
       <div className="py-28 px-20 max-w-screen-xl mx-auto">
         <div className="">
           <p className="text-gray">Home / Shoes / Sneakers</p>
@@ -188,7 +187,6 @@ export default function Products() {
         </div>
       </div>
 
-      <Footer />
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function NavSidebar({ sideBar}) {
       className={
         sideBar
           ? "z-20 top-0 left-0 fixed h-screen w-1/2 bg-white transition-all duration-200 ease-linear px-5"
-          : "w-0"
+          : "w-0 hidden"
       }
     >
       <div className="h-20 w-full flex flex-col justify-center">
