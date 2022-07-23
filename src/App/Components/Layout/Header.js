@@ -4,10 +4,10 @@ import {BsFillHandbagFill} from 'react-icons/bs'
 import {Link, NavLink} from 'react-router-dom'
 import ButtonPrimary from '../Common/ButtonPrimary';
 
-export default function Header() {
+export default function Header({sideBar,setSideBar}) {
   
   return (
-    <nav className="fixed z-20 bg-slate-50 w-screen  flex flex-row justify-center">
+    <nav className="fixed z-20 bg-slate-50 w-screen  flex flex-row justify-center h-20">
       <div className="flex mx-auto max-w-screen-xl w-full px-5 md:px-20 py-5  items-stretch">
         <div className="h-full w-1/2 md:w-1/4 flex flex-col justify-center">
           <Link to="/">
@@ -53,9 +53,16 @@ export default function Header() {
             </ButtonPrimary>
           </Link>
         </div>
-        <div className="flex flex-row justify-end text-xl  w-1/2 md:hidden">
-          <button className="px-4 py-2 bg-black text-white" >
-            <i class="ri-menu-3-fill"></i>
+        <div className="flex flex-row justify-end  w-1/2 md:hidden">
+          <button
+            className="px-4 py-2 bg-black text-white"
+            onClick={() => setSideBar(!sideBar)}
+          >
+            {sideBar ? (
+              <i class="ri-close-line"></i>
+            ) : (
+              <i class="ri-menu-3-fill"></i>
+            )}
           </button>
         </div>
       </div>

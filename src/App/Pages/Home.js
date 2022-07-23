@@ -3,11 +3,6 @@ import HomeImage from "../Assets/Images/home-image.jpg";
 import HorizontalList from "../Components/HorizontalList";
 import { Link } from "react-router-dom";
 
-
-
-
-
-
 export default function Home() {
   return (
     <>
