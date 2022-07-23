@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function ProductCard({ item }) {
+
+      if (!item.simage) {
+        item.simage =
+          "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/338fa63c-1898-4bce-beb9-4c80c92ea2cf/air-force-1-07-lx-shoes-xMp6zh.png";
+      } 
+
   const toggleImage = (e,type) => {
     type === "over"
       ? (e.target.src = item.simage)
@@ -9,18 +15,24 @@ export default function ProductCard({ item }) {
   };
 
   return (
-    <div className="w-100 p-1 mt-10 h-100 ">
+    <div className="w-100 p-2 mt-10 h-100 ">
       <Link to={`/sneakers/${"shoe1"}`}>
-        <img
-          src={item.image}
-          className="w-100 h-72 shadow-xs transition-all duration-1000 ease-in"
-          onMouseOver={(e) => toggleImage(e,"over")}
-          onMouseLeave={(e) => toggleImage(e,"leave")}
-        />
-        <div className="w-100 mt-3">
-          <p className="text-gray-400 text-sm">Nike</p>
-          <h2 className=" font-medium text-xl">Air Force 07</h2>
-          <h2 className="font-medium">80$</h2>
+        <div className="w-72">
+          <img
+            src={item.image}
+            className="h-72"
+            onMouseOver={(e) => toggleImage(e, "over")}
+            onMouseLeave={(e) => toggleImage(e, "leave")}
+          />
+          <div className="w-100 px-1 flex flex-row justify-between mt-3">
+            <div>
+              <p className="text-gray-400 text-sm">Nike</p>
+              <h2 className="text-black font-medium">Air Force 07</h2>
+            </div>
+            <div>
+              <h2 className="text-black text-xl font-medium">80$</h2>
+            </div>
+          </div>
         </div>
       </Link>
     </div>

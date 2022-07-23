@@ -6,8 +6,8 @@ import Shoe4 from "../Assets/Images/shoe4.jpg";
 import Shoe5 from "../Assets/Images/shoe5.jpg";
 import Shoe6 from "../Assets/Images/shoe6.jpg";
 
-import CardItem from "./CardItem";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
+import ProductCard from './Common/ProductCard';
 
 
 export default function HorizontalList({text="Latest Release"}) {
@@ -21,7 +21,7 @@ export default function HorizontalList({text="Latest Release"}) {
   }
   
   return (
-  <div className="w-100 py-20">
+    <div className="w-100 py-20">
       <div className="px-20">
         <div className="mb-10 flex flex-row justify-between">
           <h2 className="text-3xl font-bold">{text}</h2>
@@ -39,12 +39,12 @@ export default function HorizontalList({text="Latest Release"}) {
           id="container"
         >
           <div className="flex flex-nowrap">
-            <CardItem item={{ id: 1, image: Shoe1 }} />
-            <CardItem item={{ id: 1, image: Shoe2 }} />
-            <CardItem item={{ id: 1, image: Shoe3 }} />
-            <CardItem item={{ id: 1, image: Shoe4 }} />
-            <CardItem item={{ id: 1, image: Shoe5 }} />
-            <CardItem item={{ id: 1, image: Shoe6 }} />
+            <ProductCard item={{ id: 1, image: Shoe1 }} />
+            <ProductCard item={{ id: 1, image: Shoe2 }} />
+            <ProductCard item={{ id: 1, image: Shoe3 }} />
+            <ProductCard item={{ id: 1, image: Shoe4 }} />
+            <ProductCard item={{ id: 1, image: Shoe5 }} />
+            <ProductCard item={{ id: 1, image: Shoe6 }} />
           </div>
         </div>
       </div>
