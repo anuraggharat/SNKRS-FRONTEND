@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function ProductCard({ item }) {
+export default function ProductCard({ item,cardw,imgH }) {
 
       if (!item.simage) {
         item.simage =
@@ -17,10 +17,10 @@ export default function ProductCard({ item }) {
   return (
     <div className="w-100 p-2 mt-10 h-100 ">
       <Link to={`/sneakers/${"shoe1"}`}>
-        <div className="w-72">
+        <div className={cardw ? cardw : "w-72"}>
           <img
             src={item.image}
-            className="h-72"
+            className={imgH ? imgH : "h-72"}
             onMouseOver={(e) => toggleImage(e, "over")}
             onMouseLeave={(e) => toggleImage(e, "leave")}
           />
@@ -30,7 +30,7 @@ export default function ProductCard({ item }) {
               <h2 className="text-black font-medium">Air Force 07</h2>
             </div>
             <div>
-              <h2 className="text-black text-xl font-medium">80$</h2>
+              <h2 className="text-black  md:text-xl font-medium">80$</h2>
             </div>
           </div>
         </div>

@@ -59,31 +59,15 @@ const gender = ["Male", "Female"];
 
 
 export default function Products() {
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-    console.log(data)
   return (
     <div className="w-100 bg-white min-h-screen relative">
-      <div className="py-28 px-20 max-w-screen-xl mx-auto">
+      <div className="py-28 px-5 md:px-20 max-w-screen-xl mx-auto">
         <div className="">
-          <p className="text-gray">Home / Shoes / Sneakers</p>
-          <h1 className="text-4xl">Sneakers</h1>
+          <p className="text-gray text-sm md:text-lg">Home / Shoes / Sneakers</p>
+          <h1 className="text-2xl md:text-4xl">Sneakers</h1>
         </div>
-        <div className="flex flex-row flex-wrap mt-5">
-          <div className="w-1/5 flex flex-col p-2">
+        <div className="flex flex-row flex-wrap md:mt-5">
+          <div className="hidden md:w-1/5 md:flex md:flex-col p-2">
             <div className="w-100 pr-3 border-b-[1px] py-4">
               <h2 className="text-xl font-medium mb-2">Sort</h2>
               <div class="relative">
@@ -155,38 +139,37 @@ export default function Products() {
               ))}
             </div>
           </div>
-          <div className="w-4/5 flex flex-row flex-wrap">
-            <div className="w-1/3">
-              <ProductCard item={data[0]} />
+          <div className="w-full md:w-4/5 flex flex-row flex-wrap">
+            <div className="w-1/2 md:w-1/3">
+              <ProductCard item={data[0]} cardw="w-full" imgH="h-auto" />
             </div>
-            <div className="w-1/3">
-              <ProductCard item={data[1]} />
+            <div className="w-1/2 md:w-1/3">
+              <ProductCard item={data[1]} cardw="w-full" imgH="h-auto" />
             </div>
-            <div className="w-1/3">
-              <ProductCard item={data[2]} />
+            <div className="w-1/2 md:w-1/3">
+              <ProductCard item={data[2]} cardw="w-full" imgH="h-auto" />
             </div>
-            <div className="w-1/3">
-              <ProductCard item={data[3]} />
+            <div className="w-1/2 md:w-1/3">
+              <ProductCard item={data[3]} cardw="w-full" imgH="h-auto" />
             </div>
-            <div className="w-1/3">
-              <ProductCard item={data[4]} />
+            <div className="w-1/2 md:w-1/3">
+              <ProductCard item={data[4]} cardw="w-full" imgH="h-auto" />
             </div>
-            <div className="w-1/3">
-              <ProductCard item={data[5]} />
+            <div className="w-1/2 md:w-1/3">
+              <ProductCard item={data[5]} cardw="w-full" imgH="h-auto" />
             </div>
-            <div className="w-1/3">
-              <ProductCard item={data[6]} />
+            <div className="w-1/2 md:w-1/3">
+              <ProductCard item={data[6]} cardw="w-full" imgH="h-auto" />
             </div>
-            <div className="w-1/3">
-              <ProductCard item={data[7]} />
+            <div className="w-1/2 md:w-1/3">
+              <ProductCard item={data[7]} cardw="w-full" imgH="h-auto" />
             </div>
-            <div className="w-1/3">
-              <ProductCard item={data[8]} />
+            <div className="w-1/2 md:w-1/3">
+              <ProductCard item={data[8]} cardw="w-full" imgH="h-auto" />
             </div>
           </div>
         </div>
       </div>
-
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function BagSidebar({ setCartShown, cartShown }) {
     <div
       className={
         cartShown
-          ? "h-screen p-4 w-1/4 z-20 ml-0 bg-white shadow-lg fixed top-0 right-0 transition-all duration-900	ease-in"
+          ? "h-screen p-4 w-3/4 md:w-1/4 z-20 ml-0 bg-white shadow-lg fixed top-0 right-0 transition-all duration-900	ease-in"
           : "hidden"
       }
     >
