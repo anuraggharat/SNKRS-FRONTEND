@@ -17,7 +17,6 @@ export default function Checkout() {
 
   return (
     <div className="max-w-screen-2xl	mx-auto relative">
-      <Header />
       <div className="min-h-100 pt-20 w-full">
         <div className="px-5 md:px-20 py-20 flex flex-col md:flex-row ">
           <div className="w-full md:w-2/3">
