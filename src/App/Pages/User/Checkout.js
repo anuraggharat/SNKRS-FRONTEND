@@ -19,8 +19,8 @@ export default function Checkout() {
     <div className="max-w-screen-2xl	mx-auto relative">
       <Header />
       <div className="min-h-100 pt-20 w-full">
-        <div className="px-20 py-20 flex flex-row ">
-          <div className="w-2/3">
+        <div className="px-5 md:px-20 py-20 flex flex-col md:flex-row ">
+          <div className="w-full md:w-2/3">
             <h1 className="text-4xl font-medium">Billing Details</h1>
             <div className="w-100  mt-5">
               <div className="flex flex-row flex-wrap">
@@ -109,7 +109,7 @@ export default function Checkout() {
               </div>
             </div>
           </div>
-          <div className="w-1/3 pl-10 ">
+          <div className="w-full md:w-1/3 md:pl-10 ">
             <h1 className="text-4xl font-medium">SUMMARY</h1>
 
             <div className="shadow-lg p-5 mt-5 ">

@@ -22,29 +22,29 @@ export default function Item() {
     <div className="max-w-screen-2xl	mx-auto">
       <div className="px-5 md:px-20 flex flex-row pt-32 flex-wrap">
         <div className="w-full md:w-1/2 flex flex-col-reverse md:flex-row">
-          <div className="w-full p-1 flex flex-row md:flex-col justify-between ">
+          <div className="w-full md:w-1/5 p-1 flex flex-row md:flex-col justify-between ">
             <img
               src={data[1]}
               onClick={() => setSelected(data[1])}
-              className="cursor-pointer w-20 h-20"
+              className="cursor-pointer w-20 h-20 md:w-full md:h-auto "
             />
             <img
               src={data[2]}
               onClick={() => setSelected(data[2])}
-              className="cursor-pointer w-20 h-20"
+              className="cursor-pointer w-20 h-20 md:w-full md:h-auto "
             />
             <img
               src={data[3]}
               onClick={() => setSelected(data[3])}
-              className="cursor-pointer w-20 h-20"
+              className="cursor-pointer w-20 h-20 md:w-full md:h-auto "
             />
             <img
               src={data[4]}
               onClick={() => setSelected(data[4])}
-              className="cursor-pointer w-20 h-20"
+              className="cursor-pointer w-20 h-20 md:w-full md:h-auto "
             />
           </div>
-          <div className="w-full md:w-4/5 p-1">
+          <div className="w-full bg- md:w-4/5 p-1">
             <img src={selected} />
           </div>
         </div>
