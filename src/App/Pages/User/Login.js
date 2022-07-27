@@ -24,23 +24,25 @@ export default function Login() {
             placeholder="Password"
           />
           <div className="py-5 flex flex-row justify-between content-center">
-            <div class="flex md:items-center mb-6">
-              <label class=" block text-gray-800 ">
-                <input class="mr-2 leading-tight" type="checkbox" />
-                <span class="text-lg">Keep me Signed In!</span>
+            <div className="flex md:items-center mb-6">
+              <label className=" block text-gray-800 ">
+                <input className="mr-2 leading-tight" type="checkbox" />
+                <span className="text-lg">Keep me Signed In!</span>
               </label>
             </div>
-            <div class="text-lg">
+            <div className="text-lg">
               <Link to={"/forgotpassword"}>Forgot Password?</Link>
             </div>
           </div>
           <button className="bg-black w-full text-xl text-white border-2 border-black  font-bold py-4 px-4 rounded ">
             Login
           </button>
-          <div className='mt-4 text-center'>
+          <div className="mt-4 text-center">
             <p>
               New Here?{"  "}
-              <Link to="/user/signup" className='text-sky-400'>Signup here</Link>
+              <Link to="/user/signup" className="text-sky-400">
+                Signup here
+              </Link>
             </p>
           </div>
         </div>

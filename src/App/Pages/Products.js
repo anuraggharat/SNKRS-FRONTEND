@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../Components/Layout/Header";
-import Footer from "../Components/Layout/Footer";
 import ProductCard from "../Components/Common/ProductCard";
 
 const data = [
@@ -63,25 +61,27 @@ export default function Products() {
     <div className="w-100 bg-white min-h-screen relative">
       <div className="py-28 px-5 md:px-20 max-w-screen-xl mx-auto">
         <div className="">
-          <p className="text-gray text-sm md:text-lg">Home / Shoes / Sneakers</p>
+          <p className="text-gray text-sm md:text-lg">
+            Home / Shoes / Sneakers
+          </p>
           <h1 className="text-2xl md:text-4xl">Sneakers</h1>
         </div>
         <div className="flex flex-row flex-wrap md:mt-5">
           <div className="hidden md:w-1/5 md:flex md:flex-col p-2">
             <div className="w-100 pr-3 border-b-[1px] py-4">
               <h2 className="text-xl font-medium mb-2">Sort</h2>
-              <div class="relative">
+              <div className="relative">
                 <select
-                  class="block appearance-none w-full bg-gray-100 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  className="block appearance-none w-full bg-gray-100 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-state"
                 >
                   <option>Latest</option>
                   <option>Price Ascending</option>
                   <option>Price Descending</option>
                 </select>
-                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                   <svg
-                    class="fill-current h-4 w-4"
+                    className="fill-current h-4 w-4"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                   >

@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function SelectBox(props) {
   return (
-    <div class="relative">
+    <div className="relative">
       <select
-        class="block appearance-none w-full bg-white border-[1px] shadow text-gray-700 py-4 px-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        className="block appearance-none w-full bg-white border-[1px] shadow text-gray-700 py-4 px-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         id="grid-state"
       >
         <option value={props.name} disabled>
@@ -16,9 +16,9 @@ export default function SelectBox(props) {
           </option>
         ))}
       </select>
-      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center text-gray-700">
+      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center text-gray-700">
         <svg
-          class="fill-current h-4 w-4"
+          className="fill-current h-4 w-4"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
         >

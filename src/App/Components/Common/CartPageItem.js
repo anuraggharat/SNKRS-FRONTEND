@@ -23,14 +23,13 @@ export default function CartPageItem({data}) {
           <div className="flex flex-row w-1/2 md:w-2/6 items-start md:justify-center p-0">
             <div className="flex flex-row border-2  items-center border-black p-0">
               <button className="hover:bg-black border-2 text-xs inline-flex items-center border-black bg-black text-white  py-2 px-4 ">
-                <i class="ri-subtract-line"></i>
+                <i className="ri-subtract-line"></i>
               </button>
               <button className=" py-0 px-4 text-xs">1</button>
               <button className="hover:bg-black border-2 text-xs inline-flex items-center border-black bg-black text-white  py-2 px-4 ">
-                <i class="ri-add-line"></i>
+                <i className="ri-add-line"></i>
               </button>
             </div>
-
           </div>
           <div className="flex flex-col text-right w-1/2 md:w-1/6">
             <h1 className="font-normal text-lg">₹22,250/-</h1>

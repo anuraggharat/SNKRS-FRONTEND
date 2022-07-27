@@ -28,10 +28,10 @@ export default function Signin() {
             placeholder="Password"
           />
           <div className="py-5 flex flex-row justify-between content-center">
-            <div class="flex md:items-center mb-6">
-              <label class=" block text-gray-800 ">
-                <input class="mr-2 leading-tight" type="checkbox" />
-                <span class="text-lg">Keep me Signed In!</span>
+            <div className="flex md:items-center mb-6">
+              <label className=" block text-gray-800 ">
+                <input className="mr-2 leading-tight" type="checkbox" />
+                <span className="text-lg">Keep me Signed In!</span>
               </label>
             </div>
             <div class="text-lg">

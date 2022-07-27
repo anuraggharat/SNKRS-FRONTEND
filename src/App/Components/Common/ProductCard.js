@@ -23,6 +23,7 @@ export default function ProductCard({ item,cardw,imgH }) {
             className={imgH ? imgH : "h-72"}
             onMouseOver={(e) => toggleImage(e, "over")}
             onMouseLeave={(e) => toggleImage(e, "leave")}
+            alt="Product SNKRS"
           />
           <div className="w-100 px-1 flex flex-row justify-between mt-3">
             <div>

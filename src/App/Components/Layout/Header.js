@@ -1,6 +1,4 @@
 import React from 'react'
-import {FaRegUser} from 'react-icons/fa'
-import {BsFillHandbagFill} from 'react-icons/bs'
 import {Link, NavLink} from 'react-router-dom'
 import ButtonPrimary from '../Common/ButtonPrimary';
 
@@ -59,9 +57,9 @@ export default function Header({sideBar,setSideBar}) {
             onClick={() => setSideBar(!sideBar)}
           >
             {sideBar ? (
-              <i class="ri-close-line"></i>
+              <i className="ri-close-line"></i>
             ) : (
-              <i class="ri-menu-3-fill"></i>
+              <i className="ri-menu-3-fill"></i>
             )}
           </button>
         </div>

@@ -8,37 +8,37 @@ export default function Dashboard() {
         <div className="w-1/5 bg-white flex flex-col pt-20 px-10 font-medium fixed top-0 left-0 h-screen ">
           <Link to={"/admin/dashboard"}>
             <div className="flex flex-row px-5 py-3 mb-3 rounded-lg bg-green-400 text-white shadow ">
-              <i class="ri-dashboard-line mr-4"></i>
+              <i className="ri-dashboard-line mr-4"></i>
               <p>Dashboard</p>
             </div>
           </Link>
           <Link to={"/admin/dashboard"}>
             <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i class="ri-line-chart-line  mr-4"></i>
+              <i className="ri-line-chart-line  mr-4"></i>
               <p>Analytics</p>
             </div>
           </Link>
           <Link to={"/admin/dashboard"}>
             <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i class="ri-shopping-bag-line mr-4"></i>
+              <i className="ri-shopping-bag-line mr-4"></i>
               <p>Shop</p>
             </div>
           </Link>
           <Link to={"/admin/dashboard"}>
             <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i class="ri-user-line mr-4"></i>
+              <i className="ri-user-line mr-4"></i>
               <p>User</p>
             </div>
           </Link>
           <Link to={"/admin/addproduct"}>
             <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i class="ri-menu-add-line mr-4"></i>
+              <i className="ri-menu-add-line mr-4"></i>
               <p>Add Products</p>
             </div>
           </Link>
           <Link to={"/admin/dashboard"}>
             <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i class="ri-logout-box-line mr-4"></i>
+              <i className="ri-logout-box-line mr-4"></i>
               <p>Logout</p>
             </div>
           </Link>
@@ -79,7 +79,7 @@ export default function Dashboard() {
               <div className="w-100 flex flex-col text-center justify-center p-5 bg-white shadow rounded-lg h-[400px] custom-scrollbar">
                 <div className="inline-flex items-center flex-row justify-between mb-5">
                   <h1 className="font-medium text-black text-lg  inline-flex items-center">
-                    <i class="ri-red-packet-line mr-1"></i>
+                    <i className="ri-red-packet-line mr-1"></i>
                     <span>Recent Orders</span>
                   </h1>
                   <p className="text-md">see all</p>
@@ -168,7 +168,7 @@ export default function Dashboard() {
               <div className="w-100 p-5 flex h-[400px] flex-col text-center bg-white shadow rounded-lg overflow-y-auto custom-scrollbar">
                 <div className="inline-flex items-center flex-row justify-between mb-5">
                   <h1 className="font-medium text-black text-lg inline-flex items-center">
-                    <i class="ri-mail-unread-line mr-1"></i>
+                    <i className="ri-mail-unread-line mr-1"></i>
                     <span>Inbox</span>
                   </h1>
                   <p className="text-md">see all</p>
