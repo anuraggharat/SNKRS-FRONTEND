@@ -7,7 +7,10 @@ export default function Home() {
   return (
     <>
       <div className="w-full pt-20 md:pt-0">
-        <img src={HomeImage} className="w-full" />
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1600&q=60"
+          className="w-full"
+        />
       </div>
       <HorizontalList />
       <div className="w-full py-10 flex  md:flex-row flex-wrap justify-between px-5 md:px-20">

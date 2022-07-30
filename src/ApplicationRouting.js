@@ -11,13 +11,16 @@ import Checkout from './App/Pages/User/Checkout';
 import Login from './App/Pages/User/Login';
 import Signin from './App/Pages/User/Signin';
 import Layout from './App/Components/Layout/Index';
+import ScrollToTop from './App/Components/Layout/ScrollToTop';
 
 
 export default function ApplicationRouting() {
   return (
     <Router>
+      <ScrollToTop />
+
       <Routes>
-        <Route element={<Layout/>}>
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/sneakers/:slug" element={<Item />} />

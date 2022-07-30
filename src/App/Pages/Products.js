@@ -1,6 +1,5 @@
 import React from "react";
 import ProductCard from "../Components/Common/ProductCard";
-
 const data = [
   {
     id: 1,
@@ -51,7 +50,6 @@ const data = [
 ];
 
 const brands = ["Asics", "Converse", "Nike", "Adidas","Vans"];
-
 const colors = ["White", "Black", "Red", "Gray", "Brown"];
 const gender = ["Male", "Female"];
 

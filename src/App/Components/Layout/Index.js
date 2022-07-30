@@ -7,11 +7,16 @@ import NavSidebar from './NavSidebar';
 
 export default function Index({children}) {
 
-const [sideBar, setSideBar] = useState(false)
+  const [sideBar, setSideBar] = useState(false)
+
+  var completePath = window.location.pathname;
+  var role = completePath.split('/');
 
   return (
     <div className="bg-white relative">
-      <Header sideBar={sideBar} setSideBar={setSideBar} />
+      {role[1] !== "admin" && (
+        <Header sideBar={sideBar} setSideBar={setSideBar} />
+      )}
       <Outlet />
       <Footer />
       <NavSidebar sideBar={sideBar} />

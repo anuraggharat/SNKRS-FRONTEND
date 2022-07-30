@@ -1,81 +1,95 @@
 import React from 'react'
+import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
 export default function Dashboard() {
+
+
+  const[sidebar,setSidebar]=useState(true)
+
   return (
     <div>
-      <main className="flex flex-row min-h-screen flex-wrap text-gray-600 relative justify-end">
-        <div className="w-1/5 bg-white flex flex-col pt-20 px-10 font-medium fixed top-0 left-0 h-screen ">
-          <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg bg-green-400 text-white shadow ">
-              <i className="ri-dashboard-line mr-4"></i>
-              <p>Dashboard</p>
-            </div>
-          </Link>
-          <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i className="ri-line-chart-line  mr-4"></i>
-              <p>Analytics</p>
-            </div>
-          </Link>
-          <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i className="ri-shopping-bag-line mr-4"></i>
-              <p>Shop</p>
-            </div>
-          </Link>
-          <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i className="ri-user-line mr-4"></i>
-              <p>User</p>
-            </div>
-          </Link>
-          <Link to={"/admin/addproduct"}>
-            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i className="ri-menu-add-line mr-4"></i>
-              <p>Add Products</p>
-            </div>
-          </Link>
-          <Link to={"/admin/dashboard"}>
-            <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
-              <i className="ri-logout-box-line mr-4"></i>
-              <p>Logout</p>
-            </div>
-          </Link>
+      <main className="transition-all duration-1000 ease-in  flex flex-row min-h-screen flex-wrap bg-gray-50 text-gray-600 relative justify-end">
+        <div className="w-full flex flex-row justify-end px-5 py-10">
+          <button className="text-xl" onClick={() => setSidebar(!sidebar)}>
+            <i className="ri-dashboard-line"></i>
+          </button>
         </div>
-        <div className="w-4/5 bg-gray-50 py-20 px-10">
-          <div className="h-28 flex w-full flex-row justify-start">
+        {sidebar && (
+          <div className="w-1/2 pt-20 text-xs md:text-lg md:w-1/5 flex flex-col px-2 md:px-10 font-medium fixed top-0 left-0 h-screen bg-white shadow-lg">
+            <Link to={"/admin/dashboard"}>
+              <div className="flex flex-row px-5 py-3 mb-3 rounded-lg bg-green-400 text-white shadow ">
+                <i className="ri-dashboard-line mr-4"></i>
+                <p>Dashboard</p>
+              </div>
+            </Link>
+            <Link to={"/admin/dashboard"}>
+              <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
+                <i className="ri-line-chart-line  mr-4"></i>
+                <p>Analytics</p>
+              </div>
+            </Link>
+            <Link to={"/admin/dashboard"}>
+              <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
+                <i className="ri-shopping-bag-line mr-4"></i>
+                <p>Shop</p>
+              </div>
+            </Link>
+            <Link to={"/admin/dashboard"}>
+              <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
+                <i className="ri-user-line mr-4"></i>
+                <p>User</p>
+              </div>
+            </Link>
+            <Link to={"/admin/addproduct"}>
+              <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
+                <i className="ri-menu-add-line mr-4"></i>
+                <p>Add Products</p>
+              </div>
+            </Link>
+            <Link to={"/admin/dashboard"}>
+              <div className="flex flex-row px-5 py-3 mb-3 rounded-lg hover:bg-slate-50 hover:shadow-sm">
+                <i className="ri-logout-box-line mr-4"></i>
+                <p>Logout</p>
+              </div>
+            </Link>
+          </div>
+        )}
+        <div className="w-full md:w-4/5 pb-20 px-5 md:px-10">
+          <div className="h-14 md:h-28 flex w-full flex-row justify-start">
             <img
               src="https://pixelmator.com/community/download/file.php?avatar=17785_1569233053.png"
-              className="w-28 h-28 rounded-full"
+              className="h-14 w-14 md:w-28 md:h-28 rounded-full"
             />
-            <div className="flex flex-col justify-center ml-5">
-              <h1 className="text-2xl font-bold text-dark">
+            <div className="flex flex-col justify-center ml-1 md:ml-5">
+              <h1 className="md:text-2xl font-bold text-dark">
                 Good Morning, Anurag!
               </h1>
-              <p>Here's an overview on whats happening at the shop</p>
+              <p className="text-xs">
+                Here's an overview on whats happening at the shop
+              </p>
             </div>
           </div>
           <div className="flex flex-row flex-wrap mt-10 items-stretch">
-            <div className="w-1/3 p-2">
+            <div className="w-full md:w-1/3 p-2">
               <div className="w-100 py-10 flex flex-col text-center justify-center px-2 bg-white shadow rounded-lg">
                 <p className="mb-2 text-sm">New Orders</p>
                 <h1 className="text-5xl font-medium text-black">1400</h1>
               </div>
             </div>
-            <div className="w-1/3 p-2">
+            <div className="w-full md:w-1/3 p-2">
               <div className="w-100 py-10 flex flex-col text-center justify-center px-2 bg-white shadow rounded-lg">
                 <p className="mb-2 text-sm">Pending Orders </p>
                 <h1 className="text-5xl font-medium text-black">320</h1>
               </div>
             </div>
-            <div className="w-1/3 p-2">
+            <div className="w-full md:w-1/3 p-2">
               <div className="w-100 py-10 flex flex-col text-center justify-center px-2 bg-white shadow rounded-lg">
                 <p className="mb-2 text-sm">In Stock</p>
                 <h1 className="text-5xl font-medium text-black">5000</h1>
               </div>
             </div>
-            <div className="w-3/5 p-2 ">
+            <div className="w-full md:w-3/5 p-2 ">
               <div className="w-100 flex flex-col text-center justify-center p-5 bg-white shadow rounded-lg h-[400px] custom-scrollbar">
                 <div className="inline-flex items-center flex-row justify-between mb-5">
                   <h1 className="font-medium text-black text-lg  inline-flex items-center">
@@ -92,14 +106,14 @@ export default function Dashboard() {
                         className="w-16 rounded"
                       />
                       <div className="flex flex-col justify-center ml-2">
-                        <h1 className="text-lg font-medium text-black">
+                        <h1 className="text-sm md:text-lg font-medium text-black">
                           Nike Air Force 07
                         </h1>
                         <p className="text-xs">Mumbai, India</p>
                       </div>
                     </div>
                     <div>
-                      <p className="text-lg font-medium text-green-600">
+                      <p className="text-sm md:text-lg font-medium text-green-600">
                         +₹8,999
                       </p>
                     </div>
@@ -111,14 +125,14 @@ export default function Dashboard() {
                         className="w-16 rounded"
                       />
                       <div className="flex flex-col justify-center ml-2">
-                        <h1 className="text-lg font-medium text-black">
+                        <h1 className="text-sm md:text-lg font-medium text-black">
                           Vans SK8 Black
                         </h1>
                         <p className="text-xs">Delhi, India</p>
                       </div>
                     </div>
                     <div>
-                      <p className="text-lg font-medium text-green-600">
+                      <p className="text-sm md:text-lg font-medium text-green-600">
                         +₹4,999
                       </p>
                     </div>
@@ -130,14 +144,14 @@ export default function Dashboard() {
                         className="w-16 rounded"
                       />
                       <div className="flex flex-col justify-center ml-2">
-                        <h1 className="text-lg font-medium text-black">
+                        <h1 className="text-sm md:text-lg font-medium text-black">
                           Nike Air Jordan 4
                         </h1>
                         <p className="text-xs">Mumbai, India</p>
                       </div>
                     </div>
                     <div>
-                      <p className="text-lg font-medium text-green-600">
+                      <p className="text-sm md:text-lg font-medium text-green-600">
                         +₹18,999
                       </p>
                     </div>
@@ -149,14 +163,14 @@ export default function Dashboard() {
                         className="w-16 rounded"
                       />
                       <div className="flex flex-col justify-center ml-2">
-                        <h1 className="text-lg font-medium text-black">
+                        <h1 className="text-sm md:text-lg font-medium text-black">
                           Vans SK8 Black
                         </h1>
                         <p className="text-xs">Delhi, India</p>
                       </div>
                     </div>
                     <div>
-                      <p className="text-lg font-medium text-green-600">
+                      <p className="text-sm md:text-lg font-medium text-green-600">
                         +₹4,999
                       </p>
                     </div>
@@ -164,7 +178,7 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="w-2/5 p-2 ">
+            <div className="w-full md:w-2/5 p-2 ">
               <div className="w-100 p-5 flex h-[400px] flex-col text-center bg-white shadow rounded-lg overflow-y-auto custom-scrollbar">
                 <div className="inline-flex items-center flex-row justify-between mb-5">
                   <h1 className="font-medium text-black text-lg inline-flex items-center">
