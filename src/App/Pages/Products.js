@@ -112,7 +112,7 @@ export default function Products() {
           <div className="w-full md:w-4/5 flex flex-row flex-wrap">
             {data.map((item) => (
               <div className="w-1/2 md:w-1/3" key={item._id}>
-                <ProductCard item={item} cardw="w-full" imgH="h-auto" />
+                <ProductCard item={item} cardw="w-full" imgH="h-72" />
               </div>
             ))}
           </div>

@@ -1,23 +1,19 @@
 import React,{useEffect,useState} from 'react'
 import axios from "axios";
 
-import Shoe1 from "../Assets/Images/shoe1.webp";
-import Shoe2 from "../Assets/Images/shoe2.jpg";
-import Shoe3 from "../Assets/Images/shoe3.jpg";
-import Shoe4 from "../Assets/Images/shoe4.jpg";
-import Shoe5 from "../Assets/Images/shoe5.jpg";
-import Shoe6 from "../Assets/Images/shoe6.jpg";
-
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import ProductCard from './Common/ProductCard';
 
 
 export default function HorizontalList({text="Latest Release"}) {
-  let container;
   function scrollright() {
+      let container = document.getElementById("container");
+
     container.scrollBy(300, 0);
   }
   function scrollleft() {
+      let container = document.getElementById("container");
+
     container.scrollBy(-300, 0);
   }
   const [data, setData] = useState([]);
@@ -39,7 +35,6 @@ export default function HorizontalList({text="Latest Release"}) {
   };
 
   useEffect(() => {
-       container = document.getElementById("container");
         fetchProducts()
   
   }, [])
@@ -48,7 +43,7 @@ export default function HorizontalList({text="Latest Release"}) {
   return (
     <div className="w-100 py-10 md:py-20">
       <div className="px-5 md:px-20">
-        <div className="mb-10 flex flex-row justify-between">
+        <div className="mb-5 flex flex-row justify-between">
           <h2 className="text-3xl font-bold">{text}</h2>
           <div>
             <button className="text-2xl px-2">
@@ -60,7 +55,7 @@ export default function HorizontalList({text="Latest Release"}) {
           </div>
         </div>
         <div
-          className="relative flex overflow-x-scroll hide-scroll-bar"
+          className="relative flex overflow-x-scroll custom-scrollbar pb-10"
           id="container"
         >
           <div className="flex flex-nowrap">
