@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Shoe1 from "../Assets/Images/shoe1.webp";
 import Shoe2 from "../Assets/Images/shoe2.jpg";
 import Shoe3 from "../Assets/Images/shoe3.jpg";
@@ -11,14 +11,20 @@ import ProductCard from './Common/ProductCard';
 
 
 export default function HorizontalList({text="Latest Release"}) {
-  
-  var container = document.getElementById("container");
+  let container;
   function scrollright() {
     container.scrollBy(300, 0);
   }
   function scrollleft() {
     container.scrollBy(-300, 0);
   }
+  useEffect(() => {
+       container = document.getElementById("container");
+
+  
+  
+  }, [])
+  
   
   return (
     <div className="w-100 py-10 md:py-20">
