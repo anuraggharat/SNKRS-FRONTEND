@@ -72,7 +72,7 @@ export default function Products() {
           </div>
           <div>
             <button className="md:hidden text-xl" onClick={()=>(setSidebar(!sidebar))}>
-              <i class="ri-equalizer-line"></i>
+              <i className="ri-equalizer-line"></i>
             </button>
           </div>
         </div>

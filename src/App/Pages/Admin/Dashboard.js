@@ -5,13 +5,13 @@ import Sidebar from '../../Components/Admin/Sidebar';
 export default function Dashboard() {
 
 
-  const[sidebar,setSidebar]=useState(false)
+  const [sidebar, setSidebar] = useState(window.innerWidth > 444);
 
   return (
     <div>
       <main className="transition-all duration-1000 ease-in  flex flex-row min-h-screen flex-wrap bg-gray-50 text-gray-600 relative justify-end">
         <div className="w-full flex flex-row justify-end px-5 py-10">
-          <button className="text-xl" onClick={() => setSidebar(!sidebar)}>
+          <button className="text-xl md:hidden" onClick={() => setSidebar(!sidebar)}>
             <i className="ri-dashboard-line"></i>
           </button>
         </div>
