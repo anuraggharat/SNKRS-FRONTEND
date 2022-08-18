@@ -3,6 +3,7 @@ import BagSidebar from '../Components/Common/BagSidebar';
 import Footer from '../Components/Layout/Footer';
 import Header from '../Components/Layout/Header'
 import HorizontalList from '../Components/HorizontalList';
+import { Link } from 'react-router-dom';
 
 const data = [
   "https://superkicks.in/wp-content/uploads/2022/06/1-32-850x850.jpg",
@@ -82,18 +83,16 @@ export default function Item() {
             >
               Add to Bag
             </button>
-            <button className="hover:bg-black border-2 border-black bg-black text-white font-bold py-2 px-4 rounded mt-2">
+            <Link to="/user/cart" className="hover:bg-black border-2 border-black bg-black text-center text-white font-bold py-2 px-4 rounded mt-2">
               Buy Now
-            </button>
+            </Link>
           </div>
         </div>
       </div>
       <div>
         <HorizontalList text="Similar Items" />
       </div>
-      <div>
-        <img src="https://media.gq.com/photos/60da019bab6b8cc6e9d2c96c/64:25/w_4224,h_1650,c_limit/GettyImages-1325229940.jpg" />
-      </div>
+      
       <BagSidebar setCartShown={setCartShown} cartShown={cartShown} />
     </div>
   );

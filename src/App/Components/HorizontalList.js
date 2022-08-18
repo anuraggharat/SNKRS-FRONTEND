@@ -1,4 +1,6 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
+import axios from "axios";
+
 import Shoe1 from "../Assets/Images/shoe1.webp";
 import Shoe2 from "../Assets/Images/shoe2.jpg";
 import Shoe3 from "../Assets/Images/shoe3.jpg";
@@ -18,10 +20,27 @@ export default function HorizontalList({text="Latest Release"}) {
   function scrollleft() {
     container.scrollBy(-300, 0);
   }
-  useEffect(() => {
-       container = document.getElementById("container");
+  const [data, setData] = useState([]);
+
 
   
+  const fetchProducts = async () => {
+    try {
+      const { data } = await axios.get("http://localhost:3333/api/product");
+      console.log(data);
+      if (data.success) {
+        setData(data.products);
+      } else {
+        alert("Unable to fetch the data at the moment.");
+      }
+    } catch (error) {
+      alert("Unable to fetch the data at the moment");
+    }
+  };
+
+  useEffect(() => {
+       container = document.getElementById("container");
+        fetchProducts()
   
   }, [])
   
@@ -45,12 +64,9 @@ export default function HorizontalList({text="Latest Release"}) {
           id="container"
         >
           <div className="flex flex-nowrap">
-            <ProductCard item={{ id: 1, image: Shoe1 }} />
-            <ProductCard item={{ id: 1, image: Shoe2 }} />
-            <ProductCard item={{ id: 1, image: Shoe3 }} />
-            <ProductCard item={{ id: 1, image: Shoe4 }} />
-            <ProductCard item={{ id: 1, image: Shoe5 }} />
-            <ProductCard item={{ id: 1, image: Shoe6 }} />
+            {data.map((item) => (
+              <ProductCard key={item._id} item={item} />
+            ))}
           </div>
         </div>
       </div>

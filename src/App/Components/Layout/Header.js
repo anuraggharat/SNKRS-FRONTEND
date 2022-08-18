@@ -5,7 +5,7 @@ import ButtonPrimary from '../Common/ButtonPrimary';
 export default function Header({sideBar,setSideBar}) {
   
   return (
-    <nav className="fixed z-20 bg-slate-50 w-screen  flex flex-row justify-center h-20">
+    <nav className="fixed z-20 bg-white w-screen  flex flex-row justify-center h-20">
       <div className="flex mx-auto max-w-screen-xl w-full px-5 md:px-20 py-5  items-stretch">
         <div className="h-full w-1/2 md:w-1/4 flex flex-col justify-center">
           <Link to="/">

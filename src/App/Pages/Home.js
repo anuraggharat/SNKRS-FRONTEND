@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
-      <div className="w-full pt-20 md:pt-0">
+      <div className="w-full  px-5 md:px-20 pt-20 md:pt-20">
         <img
-          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1600&q=60"
+          src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1200&q=60"
           className="w-full"
         />
       </div>

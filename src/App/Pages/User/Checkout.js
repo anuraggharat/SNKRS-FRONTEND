@@ -163,7 +163,6 @@ export default function Checkout() {
           </div>
         </div>
       </div>
-      <Footer />
       <Modal modal={modal} setModal={setModal} />
     </div>
   );
